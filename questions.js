@@ -16,23 +16,11 @@
 // 	C: Scylla and Charybdis.
 // 	D: Xylem and Phloem. +
 
-// Q: A life-cycle consisting of a haploid sexual phase and a diploid asexual phase is known as?
-// 	A: Homozygotic.
+// Q: ?
+// 	A: .
 // 	B: Metagenesis. +
 // 	C: Kinky.
 // 	D: Tuesday.
-
-// Q: The green light capturing organelles in plant cells are called?
-// 	A: Plasmodesmata.
-// 	B: Ribosomes.
-// 	C: Chloroplasts. +
-// 	D: Photofores.
-
-// Q: Flowering plants are all members of which group?
-// 	A: Angiospermae. +
-// 	B: Gymnospermae.
-// 	C: Somuchspermae.
-// 	D: Florophyta.
 
 // Q: In what order do the four whorls of flower development appear in?
 // 	A:
@@ -45,7 +33,42 @@
 				question: "Flowering plants are all members of which group?",
 				answers: ["Angiospermae","Gymnospermae","Somuchspermae","Florophyta"],
 				correctAnswer: 0
-			}
+			},
+			{
+				question: "The green light capturing organelles in plant cells are called?",
+				answers: ["Plasmodesmata","Ribosomes","Chloroplasts","Photofores"],
+				correctAnswer: 2
+			},
+			{
+				question: "A life-cycle consisting of a haploid sexual phase and a diploid asexual phase is known as?",
+				answers: ["Homozygotic","","",""],
+				correctAnswer: 0
+			},
+			{
+				question: "",
+				answers: ["","","",""],
+				correctAnswer: 0
+			},
+			{
+				question: "",
+				answers: ["","","",""],
+				correctAnswer: 0
+			},
+			{
+				question: "",
+				answers: ["","","",""],
+				correctAnswer: 0
+			},
+			{
+				question: "",
+				answers: ["","","",""],
+				correctAnswer: 0
+			},
+			{
+				question: "",
+				answers: ["","","",""],
+				correctAnswer: 0
+			},
 		]
 	}
 };

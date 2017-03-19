@@ -12,16 +12,36 @@ var quiz = {
 
 $(document).ready(function(){
 	var currentQuestion = 0;
-	var html = '';
-	html += `<h3>${quiz.questions[currentQuestion].question}</h3>
-				<form id="answers">`
-	
-	for(i = 0; i < quiz.questions[currentQuestion].answers.length; i++) {
-		html += `<input type="radio" name="answers" value="${i}"> 
-				${quiz.questions[currentQuestion].answers[i]}</br>`
-	}
+	var score = 0;
 
-	
-	
-	$("#question-box").html(html)
+	var html = '';
+	const showQuestion = () => {
+		html += `<h3>${quiz.questions[currentQuestion].question}</h3>
+					<form id="answers">`
+		
+		for(i = 0; i < quiz.questions[currentQuestion].answers.length; i++) {
+			html += `<input type="radio" name="answers" value="${i}"> 
+					${quiz.questions[currentQuestion].answers[i]}</br>`
+		}
+		html += `<button id="submitButton" type="submit">submit</button></form>`;
+		$("#question-box").html(html);
+	};
+
+	showQuestion();
+	$(document).on('click','#submitButton',function(e) { 
+		e.preventDefault();
+		console.log("answer submitted");
+		if( $('input[name="answers"]:checked').val() == quiz.questions[currentQuestion].correctAnswer) {
+			score++;
+		}
+		currentQuestion++;
+		if( currentQuestion < quiz.questions.length) {
+			showQuestion();
+		} else {
+			html = `Score:${score}`;
+			$("#question-box").html(html);
+		}
+
+	});
+
 });
