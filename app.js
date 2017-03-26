@@ -6,6 +6,16 @@ var quiz = {
 				question: "Flowering plants are all members of which group?",
 				answers: ["Angiospermae","Gymnospermae","Somuchspermae","Florophyta"],
 				correctAnswer: 0
+			},
+			{
+				question: "The green light capturing organelles in plant cells are called?",
+				answers: ["Plasmodesmata","Ribosomes","Chloroplasts","Photofores"],
+				correctAnswer: 2
+			},
+			{
+				question: "A life-cycle consisting of a haploid sexual phase and a diploid asexual phase is known as?",
+				answers: ["Homozygotic","Metagenesis","Kinky","Tuesday"],
+				correctAnswer: 1
 			}
 		]
 	}
@@ -14,8 +24,8 @@ $(document).ready(function(){
 	var currentQuestion = 0;
 	var score = 0;
 
-	var html = '';
 	const showQuestion = () => {
+		var html = '';
 		html += `<h3>${quiz.questions[currentQuestion].question}</h3>
 					<form id="answers">`
 		
@@ -41,7 +51,5 @@ $(document).ready(function(){
 			html = `Score:${score}`;
 			$("#question-box").html(html);
 		}
-
 	});
-
 });

@@ -1,32 +1,9 @@
-// Q: Protective petal-like leaves around the bud are called?
-// 	A: Bracts. +
-// 	B: Petioles.
-// 	C: Stamen.
-// 	D: All of the above.
-
-// Q: Flowers can contain which of these?
-// 	A: Sepals.
-// 	B: Pistil. +
-// 	C: Rhizomes.
-// 	D: The Mayor of Chicago.
-
-// Q: Bark is made up of what two kinds of cells?
-// 	A: Greg and Larry.
-// 	B: Parenchyma and Schlerenchyma.
-// 	C: Scylla and Charybdis.
-// 	D: Xylem and Phloem. +
-
-// Q: ?
-// 	A: .
-// 	B: Metagenesis. +
-// 	C: Kinky.
-// 	D: Tuesday.
 
 // Q: In what order do the four whorls of flower development appear in?
 // 	A:
 
 
-	quiz: {
+var quiz = {
 		name:"plant biology",
 		questions: [
 			{
@@ -41,22 +18,22 @@
 			},
 			{
 				question: "A life-cycle consisting of a haploid sexual phase and a diploid asexual phase is known as?",
-				answers: ["Homozygotic","","",""],
-				correctAnswer: 0
+				answers: ["Homozygotic","Metagenesis","Kinky","Tuesday"],
+				correctAnswer: 1
 			},
 			{
-				question: "",
-				answers: ["","","",""],
-				correctAnswer: 0
+				question: "Bark is made up of what two kinds of cells?",
+				answers: ["Greg and Larry","Parenchyma and Schlerenchyma","Scylla and Charybdis","Xylem and Phloem"],
+				correctAnswer: 3
 			},
 			{
-				question: "",
-				answers: ["","","",""],
-				correctAnswer: 0
+				question: "Flowers can contain which of these?",
+				answers: ["Sepals","Pistil","Rhizomes","The Mayor of Chicago"],
+				correctAnswer: 1
 			},
 			{
-				question: "",
-				answers: ["","","",""],
+				question: "Protective petal-like leaves around the bud are called?",
+				answers: ["Bracts","Petioles","Stamen","All of the above"],
 				correctAnswer: 0
 			},
 			{
@@ -70,6 +47,6 @@
 				correctAnswer: 0
 			},
 		]
-	}
-};
+	};
+
 
